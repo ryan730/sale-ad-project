@@ -1,0 +1,507 @@
+{
+    "entry": {
+        "app": "./src/main.js"
+    },
+    "output": {
+        "path": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/dist",
+        "filename": "static/js/[name].[chunkhash].js",
+        "publicPath": "/dist/emp/pc/",
+        "chunkFilename": "static/js/[name].[chunkhash].js"
+    },
+    "resolve": {
+        "extensions": [
+            ".js",
+            ".vue",
+            ".json"
+        ],
+        "alias": {
+            "vue$": "vue/dist/vue.esm.js",
+            "@": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/src",
+            "@node_modules": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/node_modules",
+            "::libs": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/src/libs",
+            "::mod": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/src/mod",
+            "::pages": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/src/pages",
+            "::assets": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/src/assets"
+        }
+    },
+    "module": {
+        "rules": [
+            {
+                "test": {},
+                "loader": "eslint-loader",
+                "enforce": "pre",
+                "include": [
+                    "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/src",
+                    "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/test"
+                ],
+                "options": {}
+            },
+            {
+                "test": {},
+                "loader": "vue-loader",
+                "options": {
+                    "loaders": {
+                        "css": [
+                            {
+                                "loader": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/node_modules/extract-text-webpack-plugin/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": true,
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "postcss": [
+                            {
+                                "loader": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/node_modules/extract-text-webpack-plugin/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": true,
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "less": [
+                            {
+                                "loader": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/node_modules/extract-text-webpack-plugin/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": true,
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "less-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "sass": [
+                            {
+                                "loader": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/node_modules/extract-text-webpack-plugin/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": true,
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "sass-loader",
+                                "options": {
+                                    "indentedSyntax": true,
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "scss": [
+                            {
+                                "loader": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/node_modules/extract-text-webpack-plugin/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": true,
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "sass-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "stylus": [
+                            {
+                                "loader": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/node_modules/extract-text-webpack-plugin/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": true,
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "stylus-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "styl": [
+                            {
+                                "loader": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/node_modules/extract-text-webpack-plugin/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": true,
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "stylus-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "test": {},
+                "loader": "babel-loader",
+                "include": [
+                    "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/src",
+                    "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/test"
+                ]
+            },
+            {
+                "test": {},
+                "loader": "url-loader",
+                "options": {
+                    "limit": 10000,
+                    "name": "static/img/[name].[hash:7].[ext]"
+                }
+            },
+            {
+                "test": {},
+                "loader": "pug-loader",
+                "query": {
+                    "pretty": true,
+                    "locals": {}
+                }
+            },
+            {
+                "test": {},
+                "loader": "url-loader",
+                "options": {
+                    "limit": 10000,
+                    "name": "static/fonts/[name].[hash:7].[ext]"
+                }
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/node_modules/extract-text-webpack-plugin/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": true,
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/node_modules/extract-text-webpack-plugin/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": true,
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/node_modules/extract-text-webpack-plugin/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": true,
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "less-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/node_modules/extract-text-webpack-plugin/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": true,
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "sass-loader",
+                        "options": {
+                            "indentedSyntax": true,
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/node_modules/extract-text-webpack-plugin/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": true,
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "sass-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/node_modules/extract-text-webpack-plugin/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": true,
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "stylus-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/node_modules/extract-text-webpack-plugin/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": true,
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "stylus-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "devtool": false,
+    "plugins": [
+        {
+            "definitions": {
+                "process.env": {
+                    "NODE_ENV": "\"production\""
+                }
+            }
+        },
+        {
+            "options": {
+                "compress": {
+                    "warnings": false
+                },
+                "sourceMap": true
+            }
+        },
+        {
+            "filename": "static/css/[name].[contenthash].css",
+            "id": 1,
+            "options": {}
+        },
+        {
+            "options": {
+                "cssProcessorOptions": {
+                    "safe": true
+                },
+                "assetNameRegExp": {},
+                "canPrint": true
+            }
+        },
+        {
+            "options": {
+                "template": "src/App.pug",
+                "filename": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/dist/index.html",
+                "hash": false,
+                "inject": true,
+                "compile": true,
+                "favicon": false,
+                "minify": {
+                    "removeComments": true,
+                    "collapseWhitespace": true,
+                    "removeAttributeQuotes": true
+                },
+                "cache": true,
+                "showErrors": true,
+                "chunks": "all",
+                "excludeChunks": [],
+                "title": "Webpack App",
+                "xhtml": false,
+                "chunksSortMode": "dependency"
+            }
+        },
+        {
+            "options": {
+                "hashFunction": "md5",
+                "hashDigest": "base64",
+                "hashDigestLength": 4
+            }
+        },
+        {
+            "chunkNames": [
+                "vendor"
+            ],
+            "ident": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/node_modules/webpack/lib/optimize/CommonsChunkPlugin.js0"
+        },
+        {
+            "chunkNames": [
+                "manifest"
+            ],
+            "selectedChunks": [
+                "vendor"
+            ],
+            "ident": "/Users/liuw/works/Outsourcing/JiuLong/src/www/customer/pc/node_modules/webpack/lib/optimize/CommonsChunkPlugin.js1"
+        },
+        {}
+    ]
+}

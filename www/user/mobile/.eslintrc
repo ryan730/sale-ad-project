@@ -1,0 +1,37 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "es6": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jquery": true,
+    "es6": true
+  },
+  "plugins": [
+    "vuefix",
+    "html"
+  ],
+  "extends": [
+    "standard"
+  ],
+  "rules": {
+    "no-undef": ["off"],
+    "space-in-parens": ["off"],
+    "semi": ["error", "always"],
+    "space-before-function-paren": ["off"],
+    "no-new": ["off"],
+    "no-tabs": 0,
+    "no-mixed-spaces-and-tabs": 0,
+    "indent": [
+      "off",
+      "tab"
+    ],
+    "no-trailing-spaces": 0
+  }
+}

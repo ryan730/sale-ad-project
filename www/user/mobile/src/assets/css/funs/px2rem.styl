@@ -1,0 +1,30 @@
+/**
+ * px转换rem功能
+ * @param {tuple} list 需要被转换的数据，单个或多个
+ * 例：
+ *  margin $px2rem( 20px 30px 10px 5px )
+ */
+$px2rem( list )
+  rem = 750 / 10
+
+  for i in 0...length( list )
+    list[i] = round( operate( '/', unit( list[i], '' ), rem ) * 1rem, 2 )
+
+  return list
+
+/*
+ * 设置字号功能，不需要在加“font-size”前缀
+ * @param {Number} px  需要被转换的字号，设计图测量的字号
+ * @param {Number} dpr 设计图的放大比率，默认：2
+ * 例：
+ *  $fontSize( 12px )
+ */
+$fontSize( px, dpr = 2 )
+  font-size: ( px / dpr ) * 1px
+
+  [data-dpr='2'] &
+    font-size: @font-size * 2px
+
+  [data-dpr='3'] &
+    font-size: @font-size * 3px
+
